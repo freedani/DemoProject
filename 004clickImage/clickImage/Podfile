@@ -1,0 +1,4 @@
+
+target 'clickImage' do
+  pod 'SDWebImage'
+end
