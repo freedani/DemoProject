@@ -1,0 +1,4 @@
+
+target '006ImageKVO' do
+  pod 'SDWebImage'
+end

@@ -13,6 +13,9 @@
 		064741141E9533CE007E2239 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 064741121E9533CE007E2239 /* Main.storyboard */; };
 		064741161E9533CE007E2239 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 064741151E9533CE007E2239 /* Assets.xcassets */; };
 		064741191E9533CE007E2239 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 064741171E9533CE007E2239 /* LaunchScreen.storyboard */; };
+		064741221E953418007E2239 /* LDImageBrowserView.m in Sources */ = {isa = PBXBuildFile; fileRef = 064741201E953418007E2239 /* LDImageBrowserView.m */; };
+		064741251E967544007E2239 /* KeyValueObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 064741241E967544007E2239 /* KeyValueObserver.m */; };
+		B436656D3FB258EB875C4E88 /* libPods-006ImageKVO.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3495E467A122745400088851 /* libPods-006ImageKVO.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,13 @@
 		064741151E9533CE007E2239 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		064741181E9533CE007E2239 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0647411A1E9533CE007E2239 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		064741201E953418007E2239 /* LDImageBrowserView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDImageBrowserView.m; sourceTree = "<group>"; };
+		064741211E953418007E2239 /* LDImageBrowserView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDImageBrowserView.h; sourceTree = "<group>"; };
+		064741231E967544007E2239 /* KeyValueObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyValueObserver.h; sourceTree = "<group>"; };
+		064741241E967544007E2239 /* KeyValueObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyValueObserver.m; sourceTree = "<group>"; };
+		3495E467A122745400088851 /* libPods-006ImageKVO.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-006ImageKVO.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D7512CA93CE3B48BB1DED48 /* Pods-006ImageKVO.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-006ImageKVO.release.xcconfig"; path = "Pods/Target Support Files/Pods-006ImageKVO/Pods-006ImageKVO.release.xcconfig"; sourceTree = "<group>"; };
+		D820C6CC724CDEEA0D93E480 /* Pods-006ImageKVO.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-006ImageKVO.debug.xcconfig"; path = "Pods/Target Support Files/Pods-006ImageKVO/Pods-006ImageKVO.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B436656D3FB258EB875C4E88 /* libPods-006ImageKVO.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +55,8 @@
 			children = (
 				064741081E9533CE007E2239 /* 006ImageKVO */,
 				064741071E9533CE007E2239 /* Products */,
+				B937CEFBABEB7D3A8AF46B1C /* Pods */,
+				B5C3699B753CFDCD2165C316 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +71,10 @@
 		064741081E9533CE007E2239 /* 006ImageKVO */ = {
 			isa = PBXGroup;
 			children = (
+				064741231E967544007E2239 /* KeyValueObserver.h */,
+				064741241E967544007E2239 /* KeyValueObserver.m */,
+				064741211E953418007E2239 /* LDImageBrowserView.h */,
+				064741201E953418007E2239 /* LDImageBrowserView.m */,
 				0647410C1E9533CE007E2239 /* AppDelegate.h */,
 				0647410D1E9533CE007E2239 /* AppDelegate.m */,
 				0647410F1E9533CE007E2239 /* ViewController.h */,
@@ -79,6 +96,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		B5C3699B753CFDCD2165C316 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3495E467A122745400088851 /* libPods-006ImageKVO.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B937CEFBABEB7D3A8AF46B1C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D820C6CC724CDEEA0D93E480 /* Pods-006ImageKVO.debug.xcconfig */,
+				8D7512CA93CE3B48BB1DED48 /* Pods-006ImageKVO.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +120,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0647411D1E9533CF007E2239 /* Build configuration list for PBXNativeTarget "006ImageKVO" */;
 			buildPhases = (
+				D3E2CB3307EFE57875228F61 /* [CP] Check Pods Manifest.lock */,
 				064741021E9533CE007E2239 /* Sources */,
 				064741031E9533CE007E2239 /* Frameworks */,
 				064741041E9533CE007E2239 /* Resources */,
+				FC9882D6392C10B144D93D9E /* [CP] Embed Pods Frameworks */,
+				32DDE39468A53C1C0BDD2CE3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -146,12 +183,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		32DDE39468A53C1C0BDD2CE3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-006ImageKVO/Pods-006ImageKVO-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D3E2CB3307EFE57875228F61 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FC9882D6392C10B144D93D9E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-006ImageKVO/Pods-006ImageKVO-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		064741021E9533CE007E2239 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				064741251E967544007E2239 /* KeyValueObserver.m in Sources */,
 				064741111E9533CE007E2239 /* ViewController.m in Sources */,
+				064741221E953418007E2239 /* LDImageBrowserView.m in Sources */,
 				0647410E1E9533CE007E2239 /* AppDelegate.m in Sources */,
 				0647410B1E9533CE007E2239 /* main.m in Sources */,
 			);
@@ -271,6 +358,7 @@
 		};
 		0647411E1E9533CF007E2239 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D820C6CC724CDEEA0D93E480 /* Pods-006ImageKVO.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 649YL6VHKC;
@@ -283,6 +371,7 @@
 		};
 		0647411F1E9533CF007E2239 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D7512CA93CE3B48BB1DED48 /* Pods-006ImageKVO.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 649YL6VHKC;
@@ -312,6 +401,7 @@
 				0647411F1E9533CF007E2239 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
