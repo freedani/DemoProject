@@ -15,6 +15,8 @@
 		06C2B3AF1E9F636C0074783F /* ChatListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 06C2B3AE1E9F636C0074783F /* ChatListTableViewCell.m */; };
 		06C2B3B21E9F63900074783F /* ChatListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06C2B3B01E9F63900074783F /* ChatListViewController.m */; };
 		06C2B3B61E9F65AA0074783F /* AddressListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06C2B3B51E9F65AA0074783F /* AddressListViewController.m */; };
+		06C2B3B91E9F6B0D0074783F /* ChatListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 06C2B3B81E9F6B0D0074783F /* ChatListModel.m */; };
+		06C2B3BE1E9F70AE0074783F /* ChatListModel.plist in Resources */ = {isa = PBXBuildFile; fileRef = 06C2B3BD1E9F70AE0074783F /* ChatListModel.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,9 @@
 		06C2B3B11E9F63900074783F /* ChatListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChatListViewController.h; path = ChatList/ChatListViewController.h; sourceTree = "<group>"; };
 		06C2B3B41E9F65AA0074783F /* AddressListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddressListViewController.h; path = AddressList/AddressListViewController.h; sourceTree = "<group>"; };
 		06C2B3B51E9F65AA0074783F /* AddressListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddressListViewController.m; path = AddressList/AddressListViewController.m; sourceTree = "<group>"; };
+		06C2B3B71E9F6B0D0074783F /* ChatListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChatListModel.h; path = ChatList/ChatListModel.h; sourceTree = "<group>"; };
+		06C2B3B81E9F6B0D0074783F /* ChatListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ChatListModel.m; path = ChatList/ChatListModel.m; sourceTree = "<group>"; };
+		06C2B3BD1E9F70AE0074783F /* ChatListModel.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ChatListModel.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +97,9 @@
 				06C2B3B01E9F63900074783F /* ChatListViewController.m */,
 				06C2B3AD1E9F636C0074783F /* ChatListTableViewCell.h */,
 				06C2B3AE1E9F636C0074783F /* ChatListTableViewCell.m */,
+				06C2B3B71E9F6B0D0074783F /* ChatListModel.h */,
+				06C2B3B81E9F6B0D0074783F /* ChatListModel.m */,
+				06C2B3BD1E9F70AE0074783F /* ChatListModel.plist */,
 			);
 			name = ChatList;
 			sourceTree = "<group>";
@@ -166,6 +174,7 @@
 			files = (
 				06C2B3A51E9E66FD0074783F /* LaunchScreen.storyboard in Resources */,
 				06C2B3A21E9E66FD0074783F /* Assets.xcassets in Resources */,
+				06C2B3BE1E9F70AE0074783F /* ChatListModel.plist in Resources */,
 				06C2B3A01E9E66FD0074783F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -178,6 +187,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				06C2B3AF1E9F636C0074783F /* ChatListTableViewCell.m in Sources */,
+				06C2B3B91E9F6B0D0074783F /* ChatListModel.m in Sources */,
 				06C2B39A1E9E66FD0074783F /* AppDelegate.m in Sources */,
 				06C2B3B21E9F63900074783F /* ChatListViewController.m in Sources */,
 				06C2B3971E9E66FD0074783F /* main.m in Sources */,

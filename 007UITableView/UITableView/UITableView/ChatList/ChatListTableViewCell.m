@@ -10,6 +10,21 @@
 
 @implementation ChatListTableViewCell
 
+- (instancetype)initWithStyle:(UITableViewCellStyle)style
+              reuseIdentifier:(NSString *)reuseIdentifier
+{
+    self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
+    if (!self) {
+        return nil;
+    }
+    [self initUI];
+    return self;
+}
+
+- (void)initUI {
+    NSLog(@"%lf",self.frame.size.height);
+}
+
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
